@@ -2,18 +2,19 @@ Snowflake snowy[];
 void setup()
 {
   size(300,300);
+  background(0);
 }
 void draw()
 {
   //your code here
-  background(0);
+  
   snowy = new Snowflake[50];
   for(int i = 0; i<0; i++) snowy[i] = new Snowflake();
   for(int k = 0; k<0; k++){
-    snowy[k].erase();
-    snowy[k].lookDown();
-    snowy[k].move();
-    snowy[k].wrap();
+//    snowy[k].erase();
+ //   snowy[k].lookDown();
+   // snowy[k].move();
+   // snowy[k].wrap();
     snowy[k].show();
   }
 }
@@ -50,7 +51,7 @@ class Snowflake
   {
     //your code here
     fill(255,255,0);
-    ellipse(x, y, 5, 5);
+    ellipse(x,y, 5, 5);
   }
   void lookDown()
   {
